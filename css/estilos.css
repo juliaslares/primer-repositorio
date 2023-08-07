@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.logo {
+    margin: 25px;
+    color:salmon;
+}
+
+.logo:hover {
+    color: brown;
+    font-size: larger;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: salmon;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 1cm;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+}
+
+/* estilo de cajas o cards */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.caja1 {
+    display: flex;
+    background-color: darksalmon;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja2 {
+    display: flex;
+    background-color: salmon;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja3 {
+    display: flex;
+    background-color: darksalmon;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja4 {
+    display: flex;
+    background-color: salmon;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+/* estilos de footer */
+
+.footer {
+    background-color: aquamarine;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+    font-size: 25px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    flex: row;
+    margin: 60px;
+}
+
+.footer ul li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* hasta aca hicimos los estilos de escritorio */
+
+/* aca empiezan los media queries */
+
+@media only screen  and (max-width: 800px) {
+
+    /* mobile del menu de navegación */
+    .flex-container {
+    display: flex;
+    flex-direction: column}
+    
+    .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100px;}
+    
+    .logo {
+    margin-left: -8px;}
+    
+    .section1 {
+    flex-direction: column;}
+    
+    .caja1
+    .caja2
+    .caja3
+    .caja4 {
+    width: auto;}
+    
+    .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;}
+    
+    .footer p {
+    margin: 50px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer ul li {
+    margin: 5px;
+
+}
+
+}
